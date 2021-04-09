@@ -1,54 +1,116 @@
 <html>
-<head>
-    <title>toolkitx</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: Comfortaa;
-        }
+    <head>
+        <title>toolkitx</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link
+            href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: Comfortaa;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
 
-        .main {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            flex-direction: column;
-        }
+            a,
+            a:visited {
+                color: #555;
+                text-decoration: none;
+            }
 
-        h4 {
-            font-size: 16px;
-            color: #555;
-        }
-        p {
-            font-size: 12px;
-            color: #AAA;
-        }
-        img {
-            width: 360px;
-        }
-    </style>
-</head>
-<body>
-<div class="main">
-    <img src="logo.svg" alt="">
-    <div style="width: 348px; padding: 12px; box-sizing: border-box">
-        <h4>We are coming soon!</h4>
-        <p>Currently we are working on our brand new website and will be lunching soon. </p>
-    </div>
-</div>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143592878-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            h4 {
+                font-size: 16px;
+                color: #555;
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: 12px;
+                color: #aaa;
+            }
+            img.logo {
+                height: 60px;
+                margin-bottom: 32px;
+                border-bottom: 3px dashed #EFEFEF;
+                padding-bottom: 12px;
+            }
 
-  gtag('config', 'UA-143592878-1');
-</script>
-</body>
+            img {
+                height: 30px;
+            }
+
+            .any-stream-brand {
+                height: 30px;
+                display: flex;
+                align-items: center;
+            }
+
+            .any-stream-brand img {
+                height: 30px;
+                margin-right: 6px;
+            }
+
+            .any-stream-brand span {
+                font-size: 24px;
+            }
+
+            .brands {
+                max-width: 320px;
+                width: 100%;
+            }
+
+            .brands a {
+                display: block;
+                padding: 12px;
+                border-radius: 12px;
+                transition: all ease 0.1s;
+            }
+
+            .brands a:hover {
+                background-color: #FAFAFA;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <img class="logo" src="logo.svg" alt="" />
+            <div class="brands">
+                <a href="https://www.bingookids.com/" target="_blank">
+                    <img src="bingoo.svg" alt="" />
+                    <div class="info">
+                        <h4>Bingoo Kids</h4>
+                        <p>Explore the world with our kids</p>
+                    </div>
+                </a>
+                <a href="https://www.anystream.online/" target="_blank">
+                    <img src="any-stream.svg" alt="" />
+                    <div class="info">
+                        <h4>Any Stream</h4>
+                        <p>Designed to download online streams for your need, currently support HTTP files, YouTube... etc.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-143592878-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-143592878-1');
+        </script>
+    </body>
 </html>
